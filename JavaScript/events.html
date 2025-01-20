@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function validate(event) {
+            event.preventDefault();
+
+            var UserName = document.myform.username.value;
+            var PassWord = document.myform.pwd.value;
+
+            if (UserName === "" || PassWord === "") {
+                alert("Please fill in both the username and password.");
+                return false;
+            } else if (PassWord.length < 8) {
+                alert("Please enter a password with at least 8 characters.");
+                return false;
+            } else if (UserName === "Harshit" && PassWord === "12345678") {
+                document.write("Login is successful!");
+            } else {
+                alert("Login failed. Please check your username and password.");
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" method="post" onsubmit="validate(event)">
+        UserName: <input type="text" name="username" /><br><br>
+        PassWord: <input type="password" name="pwd" /><br><br>
+        <input type="submit" value="Submit" style="margin-left: 120px;" />
+    </form>
+</body>
+</html>

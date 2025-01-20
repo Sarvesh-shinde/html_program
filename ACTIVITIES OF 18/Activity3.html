@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0073e6;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <p>Check the console.....</p>
+
+    <script>
+        // Single-line comment: Declaring variables with different data types
+
+        // String variable
+        let name = "Harshit";
+
+        // Number variable
+        let age = 20;
+
+        // Boolean variable
+        let isStudent = true;
+
+        // Array
+        let hobbies = ["Reading", "Traveling", "Gaming"];
+
+        // Object
+        let person = {
+            firstName: "Harshit",
+            lastName: "Upadhyay",
+            age: 20,
+            isStudent: true
+        };
+
+        /* 
+            Multi-line comment:
+            Logging the variables to the console 
+            and displaying them on the document
+        */
+
+        // Logging data types and values to the console
+        console.log("Name:", name); // String
+        console.log("Age:", age); // Number
+        console.log("Is Student:", isStudent); // Boolean
+        console.log("Hobbies:", hobbies); // Array
+        console.log("Person:", person); // Object
+
+        // Writing output to the document
+        document.write("<h2>Output:</h2>");
+        document.write("<p><strong>Name:</strong> " + name + "</p>");
+        document.write("<p><strong>Age:</strong> " + age + "</p>");
+        document.write("<p><strong>Is Student:</strong> " + isStudent + "</p>");
+        document.write("<p><strong>Hobbies:</strong> " + hobbies.join(", ") + "</p>");
+        document.write("<p><strong>Person Details:</strong></p>");
+        document.write("<ul>");
+        document.write("<li>First Name: " + person.firstName + "</li>");
+        document.write("<li>Last Name: " + person.lastName + "</li>");
+        document.write("<li>Age: " + person.age + "</li>");
+        document.write("<li>Is Student: " + person.isStudent + "</li>");
+        document.write("</ul>");
+    </script>
+</body>
+
+</html>
